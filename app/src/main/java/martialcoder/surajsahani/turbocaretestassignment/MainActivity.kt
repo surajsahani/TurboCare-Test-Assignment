@@ -6,6 +6,10 @@ import android.graphics.Color
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
+import android.view.View
+import android.widget.EditText
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -22,9 +26,10 @@ class MainActivity : AppCompatActivity() {
         toolbar.navigationIcon!!.setTint(Color.BLACK)
 
         val floatbutton = findViewById<FloatingActionButton>(R.id.floatingActionButton5)
-        floatbutton.setOnClickListener{
+        floatbutton.setOnClickListener {
             val intent = Intent(this, SelectMake::class.java)
             startActivity(intent)
         }
+
     }
 }
