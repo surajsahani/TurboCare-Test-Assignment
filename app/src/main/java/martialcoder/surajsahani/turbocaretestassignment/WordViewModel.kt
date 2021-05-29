@@ -1,5 +1,3 @@
-
-
 package martialcoder.surajsahani.turbocaretestassignment
 
 import androidx.lifecycle.LiveData

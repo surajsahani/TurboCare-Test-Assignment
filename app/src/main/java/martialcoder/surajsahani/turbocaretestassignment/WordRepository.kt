@@ -1,4 +1,3 @@
-
 package martialcoder.surajsahani.turbocaretestassignment
 
 import androidx.annotation.WorkerThread
