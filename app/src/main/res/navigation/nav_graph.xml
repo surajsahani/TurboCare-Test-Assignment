@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/veliclesFragment">
+
+    <fragment
+        android:id="@+id/veliclesFragment"
+        android:name="martialcoder.surajsahani.turbocaretestassignment.Fragments.VeliclesFragment"
+        android:label="fragment_velicles"
+        tools:layout="@layout/fragment_velicles" >
+        <action
+            android:id="@+id/action_veliclesFragment_to_vehicleTypeFragment"
+            app:destination="@id/vehicleTypeFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/vehicleTypeFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_veliclesFragment_to_vehicleProfileFragment"
+            app:destination="@id/vehicleProfileFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/vehicleProfileFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleNumberFragment"
+        android:name="martialcoder.surajsahani.turbocaretestassignment.Fragments.VehicleNumberFragment"
+        android:label="fragment_vehicle_number"
+        tools:layout="@layout/fragment_vehicle_number" >
+        <action
+            android:id="@+id/action_vehicleNumberFragment_to_vehicleMakeFragment"
+            app:destination="@id/vehicleMakeFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/vehicleMakeFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleTypeFragment"
+        android:name="martialcoder.surajsahani.turbocaretestassignment.Fragments.VehicleTypeFragment"
+        android:label="fragment_vehicle_type"
+        tools:layout="@layout/fragment_vehicle_type" >
+        <action
+            android:id="@+id/action_vehicleTypeFragment_to_vehicleNumberFragment"
+            app:destination="@id/vehicleNumberFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/vehicleNumberFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleMakeFragment"
+        android:name="martialcoder.surajsahani.turbocaretestassignment.Fragments.VehicleMakeFragment"
+        android:label="fragment_vehicle_make"
+        tools:layout="@layout/fragment_vehicle_make" >
+        <action
+            android:id="@+id/action_vehicleMakeFragment_to_vehicleModelFragment"
+            app:destination="@id/vehicleModelFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/vehicleModelFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleModelFragment"
+        android:name="martialcoder.surajsahani.turbocaretestassignment.Fragments.VehicleModelFragment"
+        android:label="fragment_vehicle_model"
+        tools:layout="@layout/fragment_vehicle_model" >
+        <action
+            android:id="@+id/action_vehicleModelFragment_to_vehicleTransmissionFragment"
+            app:destination="@id/vehicleTransmissionFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/vehicleTransmissionFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleTransmissionFragment"
+        android:name="martialcoder.surajsahani.turbocaretestassignment.Fragments.VehicleTransmissionFragment"
+        android:label="fragment_vehicle_transmission"
+        tools:layout="@layout/fragment_vehicle_transmission" >
+        <action
+            android:id="@+id/action_vehicleTransmissionFragment_to_fuelTypeFragment"
+            app:destination="@id/fuelTypeFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/fuelTypeFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleProfileFragment"
+        android:name="martialcoder.surajsahani.turbocaretestassignment.Fragments.VehicleProfileFragment"
+        android:label="fragment_vehicle_profile"
+        tools:layout="@layout/fragment_vehicle_profile" >
+        <action
+            android:id="@+id/action_vehicleProfileFragment_to_veliclesFragment"
+            app:destination="@id/veliclesFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/veliclesFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fuelTypeFragment"
+        android:name="martialcoder.surajsahani.turbocaretestassignment.Fragments.FuelTypeFragment"
+        android:label="fragment_fuel_type"
+        tools:layout="@layout/fragment_fuel_type" >
+        <action
+            android:id="@+id/action_fuelTypeFragment_to_vehicleProfileFragment"
+            app:destination="@id/vehicleProfileFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/vehicleProfileFragment"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+</navigation>
